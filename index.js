@@ -1,10 +1,10 @@
 const express = require('express')
-const novoapp = express()
+const app = express()
 
-novoapp.get('/oi', function(req,res){
+app.get('/oi', function(req,res){
   res.send('Olá Mundo')
 })
-novoapp.listen(3000)
+app.listen(3000)
 // app.get('/', function (req, res) {
 //   res.send('Hello World')
 // })
